@@ -180,7 +180,7 @@ class FaultInjector:
         flat = p.view(-1)
         
         # Get current value
-        x = float(flat[elem_idx].detach().float().cpu().item())
+        x = float(flat[elem_idx].item())
         
         # Flip specific bit
         packed = struct.pack("!f", np.float32(x))
@@ -190,9 +190,9 @@ class FaultInjector:
         packed_corrupt = struct.pack("!I", i_corrupt)
         x_corrupt = struct.unpack("!f", packed_corrupt)[0]
         
-        # Update model
-        orig_dtype = flat[elem_idx].dtype
-        flat[elem_idx].copy_(torch.tensor(x_corrupt, device=flat.device, dtype=orig_dtype))
+        # Update model (use .data to avoid gradient tracking)
+        with torch.no_grad():
+            flat.data[elem_idx] = x_corrupt
     
     @torch.no_grad()
     def run_fault_injection(self, model, clean_state, n_faults: int):

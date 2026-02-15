@@ -129,14 +129,17 @@ for i in range(n_test):
     model.load_state_dict(clean_state, strict=True)
     model.eval()
     
-    # Inject random fault
-    name, p_tensor = random.choice(all_params)
-    flat = p_tensor.view(-1)
-    idx = random.randint(0, flat.numel() - 1)
-    
-    x = float(flat[idx].detach().float().cpu().item())
-    x_corrupt = bitflip_fp32_scalar(x)
-    flat[idx].copy_(torch.tensor(x_corrupt, device=flat.device, dtype=flat[idx].dtype))
+    # Inject random fault (using no_grad context and data access)
+    with torch.no_grad():
+        name, p_tensor = random.choice(all_params)
+        flat = p_tensor.view(-1)
+        idx = random.randint(0, flat.numel() - 1)
+        
+        x = float(flat[idx].item())
+        x_corrupt = bitflip_fp32_scalar(x)
+        
+        # Use .data to avoid gradient tracking issues
+        flat.data[idx] = x_corrupt
     
     # Evaluate
     try:
