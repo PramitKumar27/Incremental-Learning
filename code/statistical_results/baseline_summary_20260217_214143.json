@@ -1,0 +1,31 @@
+{
+  "experiment": "conservative_baseline",
+  "timestamp": "20260217_214143",
+  "configuration": {
+    "margin_of_error": 0.01,
+    "confidence_level": 0.99,
+    "failure_probability": 0.5,
+    "population_size": 5526346,
+    "sample_size": 16538,
+    "baseline_accuracy": 97.9
+  },
+  "metrics": {
+    "n": 16538,
+    "N": 5526346,
+    "failures": 485,
+    "p_hat": 0.02932639980650623,
+    "e_hat": 0.0033743552751111603,
+    "ci_lower": 0.025952044531395067,
+    "ci_upper": 0.03270075508161739,
+    "confidence_level": 0.99
+  },
+  "failure_counts": {
+    "catastrophic_nan_inf": 98,
+    "catastrophic_low_acc": 352,
+    "mission_failure": 15,
+    "sdc_significant": 20,
+    "sdc_minor": 234,
+    "no_effect": 15819
+  },
+  "duration_seconds": 167868.057552
+}

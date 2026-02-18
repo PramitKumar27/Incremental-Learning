@@ -46,7 +46,7 @@ OUTPUT_DIR = Path("./statistical_results")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 # Statistical Parameters
-MARGIN_OF_ERROR = 0.001  # 0.1% margin
+MARGIN_OF_ERROR = 0.01  # 1% margin
 CONFIDENCE_LEVEL = 0.99  # 99% confidence
 FAILURE_PROB = 0.5  # Conservative: assume 50% (worst case)
 
