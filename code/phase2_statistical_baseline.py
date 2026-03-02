@@ -6,7 +6,7 @@ This serves as our baseline to validate the statistical formulas.
 
 Based on:
 - Leveugle et al. (DATE 2009): Statistical FI framework
-- Your previous phase_2_knee.py for fault model and evaluation
+- previous phase_2_knee.py for fault model and evaluation
 """
 
 import random
