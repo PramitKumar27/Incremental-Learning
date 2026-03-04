@@ -1,0 +1,375 @@
+{
+  "experiment": "layerwise_analysis",
+  "timestamp": "20260303_083929",
+  "configuration": {
+    "margin_of_error": 0.02,
+    "confidence_level": 0.95,
+    "failure_probability": 0.03,
+    "baseline_accuracy": 97.9
+  },
+  "total_duration_seconds": 27875.27069,
+  "layer_summary": [
+    {
+      "layer_name": "block_0",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 6,
+      "failure_rate": 0.02142857142857143,
+      "margin_error": 0.016956090347322532,
+      "ci_lower": 0.004472481081248897,
+      "ci_upper": 0.03838466177589396,
+      "duration_seconds": 1963.08968,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 5,
+        "mission_failure": 0,
+        "sdc_significant": 1,
+        "sdc_minor": 5,
+        "no_effect": 269
+      }
+    },
+    {
+      "layer_name": "block_1",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 6,
+      "failure_rate": 0.02142857142857143,
+      "margin_error": 0.016956090347322532,
+      "ci_lower": 0.004472481081248897,
+      "ci_upper": 0.03838466177589396,
+      "duration_seconds": 1921.787384,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 6,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 10,
+        "no_effect": 264
+      }
+    },
+    {
+      "layer_name": "block_10",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 9,
+      "failure_rate": 0.03214285714285714,
+      "margin_error": 0.02065288446351627,
+      "ci_lower": 0.01148997267934087,
+      "ci_upper": 0.05279574160637341,
+      "duration_seconds": 1927.800235,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 7,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 2,
+        "no_effect": 269
+      }
+    },
+    {
+      "layer_name": "block_11",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 7,
+      "failure_rate": 0.025,
+      "margin_error": 0.01828121931852196,
+      "ci_lower": 0.006718780681478041,
+      "ci_upper": 0.04328121931852196,
+      "duration_seconds": 1924.616606,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 4,
+        "mission_failure": 0,
+        "sdc_significant": 1,
+        "sdc_minor": 2,
+        "no_effect": 271
+      }
+    },
+    {
+      "layer_name": "block_2",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 11,
+      "failure_rate": 0.039285714285714285,
+      "margin_error": 0.022748213622081227,
+      "ci_lower": 0.01653750066363306,
+      "ci_upper": 0.06203392790779551,
+      "duration_seconds": 1921.904778,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 9,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 10,
+        "no_effect": 259
+      }
+    },
+    {
+      "layer_name": "block_3",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 10,
+      "failure_rate": 0.03571428571428571,
+      "margin_error": 0.021729848449758386,
+      "ci_lower": 0.013984437264527326,
+      "ci_upper": 0.0574441341640441,
+      "duration_seconds": 1925.823712,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 8,
+        "mission_failure": 0,
+        "sdc_significant": 1,
+        "sdc_minor": 0,
+        "no_effect": 270
+      }
+    },
+    {
+      "layer_name": "block_4",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 12,
+      "failure_rate": 0.04285714285714286,
+      "margin_error": 0.023715530032079744,
+      "ci_lower": 0.019141612825063114,
+      "ci_upper": 0.0665726728892226,
+      "duration_seconds": 1927.33104,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 9,
+        "mission_failure": 0,
+        "sdc_significant": 1,
+        "sdc_minor": 2,
+        "no_effect": 266
+      }
+    },
+    {
+      "layer_name": "block_5",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 11,
+      "failure_rate": 0.039285714285714285,
+      "margin_error": 0.022748213622081227,
+      "ci_lower": 0.01653750066363306,
+      "ci_upper": 0.06203392790779551,
+      "duration_seconds": 1927.917688,
+      "failure_counts": {
+        "catastrophic_nan_inf": 4,
+        "catastrophic_low_acc": 7,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 4,
+        "no_effect": 265
+      }
+    },
+    {
+      "layer_name": "block_6",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 5,
+      "failure_rate": 0.017857142857142856,
+      "margin_error": 0.015506942068682911,
+      "ci_lower": 0.002350200788459945,
+      "ci_upper": 0.033364084925825765,
+      "duration_seconds": 1931.860851,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 3,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 272
+      }
+    },
+    {
+      "layer_name": "block_7",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 7,
+      "failure_rate": 0.025,
+      "margin_error": 0.01828121931852196,
+      "ci_lower": 0.006718780681478041,
+      "ci_upper": 0.04328121931852196,
+      "duration_seconds": 1923.783759,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 7,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 2,
+        "no_effect": 271
+      }
+    },
+    {
+      "layer_name": "block_8",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 8,
+      "failure_rate": 0.02857142857142857,
+      "margin_error": 0.019507618820283946,
+      "ci_lower": 0.009063809751144625,
+      "ci_upper": 0.048079047391712516,
+      "duration_seconds": 1918.164755,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 6,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 269
+      }
+    },
+    {
+      "layer_name": "block_9",
+      "population_size": 444864,
+      "sample_size": 280,
+      "failures": 7,
+      "failure_rate": 0.025,
+      "margin_error": 0.01828121931852196,
+      "ci_lower": 0.006718780681478041,
+      "ci_upper": 0.04328121931852196,
+      "duration_seconds": 1938.848649,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 7,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 270
+      }
+    },
+    {
+      "layer_name": "head",
+      "population_size": 1930,
+      "sample_size": 245,
+      "failures": 6,
+      "failure_rate": 0.024489795918367346,
+      "margin_error": 0.018088700951589938,
+      "ci_lower": 0.006401094966777408,
+      "ci_upper": 0.04257849686995728,
+      "duration_seconds": 1686.062089,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 2,
+        "mission_failure": 1,
+        "sdc_significant": 3,
+        "sdc_minor": 2,
+        "no_effect": 237
+      }
+    },
+    {
+      "layer_name": "norm",
+      "population_size": 384,
+      "sample_size": 162,
+      "failures": 18,
+      "failure_rate": 0.1111111111111111,
+      "margin_error": 0.0368442879711915,
+      "ci_lower": 0.07426682313991961,
+      "ci_upper": 0.1479553990823026,
+      "duration_seconds": 1115.91142,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 10,
+        "mission_failure": 4,
+        "sdc_significant": 3,
+        "sdc_minor": 0,
+        "no_effect": 144
+      }
+    },
+    {
+      "layer_name": "patch_embed",
+      "population_size": 147648,
+      "sample_size": 279,
+      "failures": 9,
+      "failure_rate": 0.03225806451612903,
+      "margin_error": 0.020712650527653583,
+      "ci_lower": 0.011545413988475448,
+      "ci_upper": 0.05297071504378262,
+      "duration_seconds": 1920.355043,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 8,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 1,
+        "no_effect": 269
+      }
+    }
+  ],
+  "ranked_layers": [
+    {
+      "rank": 1,
+      "layer": "norm",
+      "failure_rate": 0.1111111111111111
+    },
+    {
+      "rank": 2,
+      "layer": "block_4",
+      "failure_rate": 0.04285714285714286
+    },
+    {
+      "rank": 3,
+      "layer": "block_2",
+      "failure_rate": 0.039285714285714285
+    },
+    {
+      "rank": 4,
+      "layer": "block_5",
+      "failure_rate": 0.039285714285714285
+    },
+    {
+      "rank": 5,
+      "layer": "block_3",
+      "failure_rate": 0.03571428571428571
+    },
+    {
+      "rank": 6,
+      "layer": "patch_embed",
+      "failure_rate": 0.03225806451612903
+    },
+    {
+      "rank": 7,
+      "layer": "block_10",
+      "failure_rate": 0.03214285714285714
+    },
+    {
+      "rank": 8,
+      "layer": "block_8",
+      "failure_rate": 0.02857142857142857
+    },
+    {
+      "rank": 9,
+      "layer": "block_11",
+      "failure_rate": 0.025
+    },
+    {
+      "rank": 10,
+      "layer": "block_7",
+      "failure_rate": 0.025
+    },
+    {
+      "rank": 11,
+      "layer": "block_9",
+      "failure_rate": 0.025
+    },
+    {
+      "rank": 12,
+      "layer": "head",
+      "failure_rate": 0.024489795918367346
+    },
+    {
+      "rank": 13,
+      "layer": "block_0",
+      "failure_rate": 0.02142857142857143
+    },
+    {
+      "rank": 14,
+      "layer": "block_1",
+      "failure_rate": 0.02142857142857143
+    },
+    {
+      "rank": 15,
+      "layer": "block_6",
+      "failure_rate": 0.017857142857142856
+    }
+  ]
+}

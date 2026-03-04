@@ -1,0 +1,622 @@
+{
+  "experiment": "componentwise_analysis",
+  "timestamp": "20260304_010524",
+  "configuration": {
+    "margin_of_error": 0.03,
+    "confidence_level": 0.95,
+    "failure_probability": 0.04,
+    "baseline_accuracy": 97.9,
+    "focus_layers": [
+      "norm",
+      "blocks.2",
+      "blocks.3",
+      "blocks.4",
+      "blocks.5"
+    ]
+  },
+  "total_duration_seconds": 31276.063451,
+  "component_summary": [
+    {
+      "component_name": "block_2_attn_proj",
+      "population_size": 37056,
+      "sample_size": 164,
+      "failures": 4,
+      "failure_rate": 0.024390243902439025,
+      "margin_error": 0.023556729615159366,
+      "ci_lower": 0.0008335142872796589,
+      "ci_upper": 0.04794697351759839,
+      "duration_seconds": 1287.130585,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 4,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 0,
+        "no_effect": 160
+      }
+    },
+    {
+      "component_name": "block_2_attn_qkv",
+      "population_size": 111168,
+      "sample_size": 164,
+      "failures": 6,
+      "failure_rate": 0.036585365853658534,
+      "margin_error": 0.02871229180511661,
+      "ci_lower": 0.007873074048541925,
+      "ci_upper": 0.06529765765877514,
+      "duration_seconds": 1331.046448,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 3,
+        "mission_failure": 0,
+        "sdc_significant": 2,
+        "sdc_minor": 1,
+        "no_effect": 157
+      }
+    },
+    {
+      "component_name": "block_2_mlp_fc1",
+      "population_size": 148224,
+      "sample_size": 164,
+      "failures": 3,
+      "failure_rate": 0.018292682926829267,
+      "margin_error": 0.020498258107484933,
+      "ci_lower": 0,
+      "ci_upper": 0.0387909410343142,
+      "duration_seconds": 1359.352605,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 3,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 158
+      }
+    },
+    {
+      "component_name": "block_2_mlp_fc2",
+      "population_size": 147648,
+      "sample_size": 164,
+      "failures": 11,
+      "failure_rate": 0.06707317073170732,
+      "margin_error": 0.038263484534989664,
+      "ci_lower": 0.028809686196717657,
+      "ci_upper": 0.10533665526669699,
+      "duration_seconds": 1349.985095,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 11,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 0,
+        "no_effect": 153
+      }
+    },
+    {
+      "component_name": "block_2_norm1",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 8,
+      "failure_rate": 0.06896551724137931,
+      "margin_error": 0.03857322836729068,
+      "ci_lower": 0.03039228887408863,
+      "ci_upper": 0.10753874560867,
+      "duration_seconds": 970.907739,
+      "failure_counts": {
+        "catastrophic_nan_inf": 3,
+        "catastrophic_low_acc": 4,
+        "mission_failure": 0,
+        "sdc_significant": 1,
+        "sdc_minor": 2,
+        "no_effect": 106
+      }
+    },
+    {
+      "component_name": "block_2_norm2",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 5,
+      "failure_rate": 0.04310344827586207,
+      "margin_error": 0.030915452589308005,
+      "ci_lower": 0.012187995686554067,
+      "ci_upper": 0.07401890086517007,
+      "duration_seconds": 952.795382,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 4,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 108
+      }
+    },
+    {
+      "component_name": "block_3_attn_proj",
+      "population_size": 37056,
+      "sample_size": 164,
+      "failures": 2,
+      "failure_rate": 0.012195121951219513,
+      "margin_error": 0.0167609069569452,
+      "ci_lower": 0,
+      "ci_upper": 0.028956028908164712,
+      "duration_seconds": 1347.257783,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 2,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 2,
+        "no_effect": 160
+      }
+    },
+    {
+      "component_name": "block_3_attn_qkv",
+      "population_size": 111168,
+      "sample_size": 164,
+      "failures": 5,
+      "failure_rate": 0.03048780487804878,
+      "margin_error": 0.026293430659425306,
+      "ci_lower": 0.004194374218623474,
+      "ci_upper": 0.056781235537474085,
+      "duration_seconds": 1353.952825,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 1,
+        "mission_failure": 0,
+        "sdc_significant": 4,
+        "sdc_minor": 5,
+        "no_effect": 154
+      }
+    },
+    {
+      "component_name": "block_3_mlp_fc1",
+      "population_size": 148224,
+      "sample_size": 164,
+      "failures": 5,
+      "failure_rate": 0.03048780487804878,
+      "margin_error": 0.026298256459444853,
+      "ci_lower": 0.004189548418603927,
+      "ci_upper": 0.05678606133749363,
+      "duration_seconds": 1326.07623,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 3,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 156
+      }
+    },
+    {
+      "component_name": "block_3_mlp_fc2",
+      "population_size": 147648,
+      "sample_size": 164,
+      "failures": 8,
+      "failure_rate": 0.04878048780487805,
+      "margin_error": 0.03294957005239949,
+      "ci_lower": 0.01583091775247856,
+      "ci_upper": 0.08173005785727755,
+      "duration_seconds": 1362.021854,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 8,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 153
+      }
+    },
+    {
+      "component_name": "block_3_norm1",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 4,
+      "failure_rate": 0.034482758620689655,
+      "margin_error": 0.02777589899432014,
+      "ci_lower": 0.006706859626369514,
+      "ci_upper": 0.062258657615009795,
+      "duration_seconds": 949.088145,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 3,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 1,
+        "no_effect": 111
+      }
+    },
+    {
+      "component_name": "block_3_norm2",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 3,
+      "failure_rate": 0.02586206896551724,
+      "margin_error": 0.024161782263172588,
+      "ci_lower": 0.0017002867023446534,
+      "ci_upper": 0.050023851228689825,
+      "duration_seconds": 935.839809,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 2,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 1,
+        "no_effect": 112
+      }
+    },
+    {
+      "component_name": "block_4_attn_proj",
+      "population_size": 37056,
+      "sample_size": 164,
+      "failures": 9,
+      "failure_rate": 0.054878048780487805,
+      "margin_error": 0.03477860146419976,
+      "ci_lower": 0.020099447316288044,
+      "ci_upper": 0.08965665024468757,
+      "duration_seconds": 1574.816524,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 9,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 152
+      }
+    },
+    {
+      "component_name": "block_4_attn_qkv",
+      "population_size": 111168,
+      "sample_size": 164,
+      "failures": 5,
+      "failure_rate": 0.03048780487804878,
+      "margin_error": 0.026293430659425306,
+      "ci_lower": 0.004194374218623474,
+      "ci_upper": 0.056781235537474085,
+      "duration_seconds": 1573.723366,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 5,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 2,
+        "no_effect": 157
+      }
+    },
+    {
+      "component_name": "block_4_mlp_fc1",
+      "population_size": 148224,
+      "sample_size": 164,
+      "failures": 3,
+      "failure_rate": 0.018292682926829267,
+      "margin_error": 0.020498258107484933,
+      "ci_lower": 0,
+      "ci_upper": 0.0387909410343142,
+      "duration_seconds": 1496.962941,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 2,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 5,
+        "no_effect": 156
+      }
+    },
+    {
+      "component_name": "block_4_mlp_fc2",
+      "population_size": 147648,
+      "sample_size": 164,
+      "failures": 2,
+      "failure_rate": 0.012195121951219513,
+      "margin_error": 0.016788618654871725,
+      "ci_lower": 0,
+      "ci_upper": 0.028983740606091237,
+      "duration_seconds": 1336.314546,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 2,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 2,
+        "no_effect": 160
+      }
+    },
+    {
+      "component_name": "block_4_norm1",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 3,
+      "failure_rate": 0.02586206896551724,
+      "margin_error": 0.024161782263172588,
+      "ci_lower": 0.0017002867023446534,
+      "ci_upper": 0.050023851228689825,
+      "duration_seconds": 934.717762,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 1,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 110
+      }
+    },
+    {
+      "component_name": "block_4_norm2",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 1,
+      "failure_rate": 0.008620689655172414,
+      "margin_error": 0.01407271969669062,
+      "ci_lower": 0,
+      "ci_upper": 0.022693409351863033,
+      "duration_seconds": 930.3688,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 0,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 2,
+        "no_effect": 113
+      }
+    },
+    {
+      "component_name": "block_5_attn_proj",
+      "population_size": 37056,
+      "sample_size": 164,
+      "failures": 5,
+      "failure_rate": 0.03048780487804878,
+      "margin_error": 0.02625479154419283,
+      "ci_lower": 0.004233013333855951,
+      "ci_upper": 0.05674259642224161,
+      "duration_seconds": 1315.110638,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 5,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 1,
+        "no_effect": 158
+      }
+    },
+    {
+      "component_name": "block_5_attn_qkv",
+      "population_size": 111168,
+      "sample_size": 164,
+      "failures": 2,
+      "failure_rate": 0.012195121951219513,
+      "margin_error": 0.016785573944463276,
+      "ci_lower": 0,
+      "ci_upper": 0.02898069589568279,
+      "duration_seconds": 1530.460834,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 1,
+        "mission_failure": 1,
+        "sdc_significant": 0,
+        "sdc_minor": 1,
+        "no_effect": 161
+      }
+    },
+    {
+      "component_name": "block_5_mlp_fc1",
+      "population_size": 148224,
+      "sample_size": 164,
+      "failures": 1,
+      "failure_rate": 0.006097560975609756,
+      "margin_error": 0.011907955256859505,
+      "ci_lower": 0,
+      "ci_upper": 0.018005516232469262,
+      "duration_seconds": 1535.420111,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 1,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 1,
+        "no_effect": 162
+      }
+    },
+    {
+      "component_name": "block_5_mlp_fc2",
+      "population_size": 147648,
+      "sample_size": 164,
+      "failures": 6,
+      "failure_rate": 0.036585365853658534,
+      "margin_error": 0.028717499885221508,
+      "ci_lower": 0.007867865968437027,
+      "ci_upper": 0.06530286573888004,
+      "duration_seconds": 1535.534445,
+      "failure_counts": {
+        "catastrophic_nan_inf": 0,
+        "catastrophic_low_acc": 6,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 2,
+        "no_effect": 156
+      }
+    },
+    {
+      "component_name": "block_5_norm1",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 1,
+      "failure_rate": 0.008620689655172414,
+      "margin_error": 0.01407271969669062,
+      "ci_lower": 0,
+      "ci_upper": 0.022693409351863033,
+      "duration_seconds": 1065.191901,
+      "failure_counts": {
+        "catastrophic_nan_inf": 1,
+        "catastrophic_low_acc": 0,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 3,
+        "no_effect": 112
+      }
+    },
+    {
+      "component_name": "block_5_norm2",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 4,
+      "failure_rate": 0.034482758620689655,
+      "margin_error": 0.02777589899432014,
+      "ci_lower": 0.006706859626369514,
+      "ci_upper": 0.062258657615009795,
+      "duration_seconds": 970.547255,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 2,
+        "mission_failure": 0,
+        "sdc_significant": 0,
+        "sdc_minor": 0,
+        "no_effect": 112
+      }
+    },
+    {
+      "component_name": "final_norm",
+      "population_size": 384,
+      "sample_size": 116,
+      "failures": 10,
+      "failure_rate": 0.08620689655172414,
+      "margin_error": 0.042724997879901395,
+      "ci_lower": 0.04348189867182275,
+      "ci_upper": 0.12893189443162553,
+      "duration_seconds": 951.412309,
+      "failure_counts": {
+        "catastrophic_nan_inf": 2,
+        "catastrophic_low_acc": 7,
+        "mission_failure": 1,
+        "sdc_significant": 0,
+        "sdc_minor": 2,
+        "no_effect": 104
+      }
+    }
+  ],
+  "ranked_components": [
+    {
+      "rank": 1,
+      "component": "final_norm",
+      "failure_rate": 0.08620689655172414
+    },
+    {
+      "rank": 2,
+      "component": "block_2_norm1",
+      "failure_rate": 0.06896551724137931
+    },
+    {
+      "rank": 3,
+      "component": "block_2_mlp_fc2",
+      "failure_rate": 0.06707317073170732
+    },
+    {
+      "rank": 4,
+      "component": "block_4_attn_proj",
+      "failure_rate": 0.054878048780487805
+    },
+    {
+      "rank": 5,
+      "component": "block_3_mlp_fc2",
+      "failure_rate": 0.04878048780487805
+    },
+    {
+      "rank": 6,
+      "component": "block_2_norm2",
+      "failure_rate": 0.04310344827586207
+    },
+    {
+      "rank": 7,
+      "component": "block_2_attn_qkv",
+      "failure_rate": 0.036585365853658534
+    },
+    {
+      "rank": 8,
+      "component": "block_5_mlp_fc2",
+      "failure_rate": 0.036585365853658534
+    },
+    {
+      "rank": 9,
+      "component": "block_3_norm1",
+      "failure_rate": 0.034482758620689655
+    },
+    {
+      "rank": 10,
+      "component": "block_5_norm2",
+      "failure_rate": 0.034482758620689655
+    },
+    {
+      "rank": 11,
+      "component": "block_3_attn_qkv",
+      "failure_rate": 0.03048780487804878
+    },
+    {
+      "rank": 12,
+      "component": "block_3_mlp_fc1",
+      "failure_rate": 0.03048780487804878
+    },
+    {
+      "rank": 13,
+      "component": "block_4_attn_qkv",
+      "failure_rate": 0.03048780487804878
+    },
+    {
+      "rank": 14,
+      "component": "block_5_attn_proj",
+      "failure_rate": 0.03048780487804878
+    },
+    {
+      "rank": 15,
+      "component": "block_3_norm2",
+      "failure_rate": 0.02586206896551724
+    },
+    {
+      "rank": 16,
+      "component": "block_4_norm1",
+      "failure_rate": 0.02586206896551724
+    },
+    {
+      "rank": 17,
+      "component": "block_2_attn_proj",
+      "failure_rate": 0.024390243902439025
+    },
+    {
+      "rank": 18,
+      "component": "block_2_mlp_fc1",
+      "failure_rate": 0.018292682926829267
+    },
+    {
+      "rank": 19,
+      "component": "block_4_mlp_fc1",
+      "failure_rate": 0.018292682926829267
+    },
+    {
+      "rank": 20,
+      "component": "block_3_attn_proj",
+      "failure_rate": 0.012195121951219513
+    },
+    {
+      "rank": 21,
+      "component": "block_4_mlp_fc2",
+      "failure_rate": 0.012195121951219513
+    },
+    {
+      "rank": 22,
+      "component": "block_5_attn_qkv",
+      "failure_rate": 0.012195121951219513
+    },
+    {
+      "rank": 23,
+      "component": "block_4_norm2",
+      "failure_rate": 0.008620689655172414
+    },
+    {
+      "rank": 24,
+      "component": "block_5_norm1",
+      "failure_rate": 0.008620689655172414
+    },
+    {
+      "rank": 25,
+      "component": "block_5_mlp_fc1",
+      "failure_rate": 0.006097560975609756
+    }
+  ]
+}

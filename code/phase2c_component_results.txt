@@ -1,0 +1,441 @@
+======================================================================
+PHASE 2C: COMPONENT-WISE STATISTICAL FAULT INJECTION
+======================================================================
+Margin of Error: 3.0%
+Confidence Level: 95.0%
+Focus layers: norm, blocks.2, blocks.3, blocks.4, blocks.5
+Estimated time: ~4-5 hours
+======================================================================
+
+[1] Loading dataset and model...
+Baseline accuracy: 97.90%
+
+[2] Organizing parameters by component...
+
+Component structure:
+Component                        Parameters   Percentage
+--------------------------------------------------------
+block_2_attn_proj                    37,056        2.08%
+block_2_attn_qkv                    111,168        6.25%
+block_2_mlp_fc1                     148,224        8.33%
+block_2_mlp_fc2                     147,648        8.30%
+block_2_norm1                           384        0.02%
+block_2_norm2                           384        0.02%
+block_3_attn_proj                    37,056        2.08%
+block_3_attn_qkv                    111,168        6.25%
+block_3_mlp_fc1                     148,224        8.33%
+block_3_mlp_fc2                     147,648        8.30%
+block_3_norm1                           384        0.02%
+block_3_norm2                           384        0.02%
+block_4_attn_proj                    37,056        2.08%
+block_4_attn_qkv                    111,168        6.25%
+block_4_mlp_fc1                     148,224        8.33%
+block_4_mlp_fc2                     147,648        8.30%
+block_4_norm1                           384        0.02%
+block_4_norm2                           384        0.02%
+block_5_attn_proj                    37,056        2.08%
+block_5_attn_qkv                    111,168        6.25%
+block_5_mlp_fc1                     148,224        8.33%
+block_5_mlp_fc2                     147,648        8.30%
+block_5_norm1                           384        0.02%
+block_5_norm2                           384        0.02%
+final_norm                              384        0.02%
+
+======================================================================
+RUNNING COMPONENT-WISE CAMPAIGNS
+======================================================================
+
+======================================================================
+COMPONENT: block_2_attn_proj
+======================================================================
+Population (N): 37,056
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_2_attn_proj:
+  Tests: 164
+  Failures: 4
+  Failure rate: 2.44% ± 2.36%
+  CI: [0.08%, 4.79%]
+  Duration: 1287.1 sec (21.5 min)
+
+======================================================================
+COMPONENT: block_2_attn_qkv
+======================================================================
+Population (N): 111,168
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_2_attn_qkv:
+  Tests: 164
+  Failures: 6
+  Failure rate: 3.66% ± 2.87%
+  CI: [0.79%, 6.53%]
+  Duration: 1331.0 sec (22.2 min)
+
+======================================================================
+COMPONENT: block_2_mlp_fc1
+======================================================================
+Population (N): 148,224
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_2_mlp_fc1:
+  Tests: 164
+  Failures: 3
+  Failure rate: 1.83% ± 2.05%
+  CI: [0.00%, 3.88%]
+  Duration: 1359.4 sec (22.7 min)
+
+======================================================================
+COMPONENT: block_2_mlp_fc2
+======================================================================
+Population (N): 147,648
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_2_mlp_fc2:
+  Tests: 164
+  Failures: 11
+  Failure rate: 6.71% ± 3.83%
+  CI: [2.88%, 10.53%]
+  Duration: 1350.0 sec (22.5 min)
+
+======================================================================
+COMPONENT: block_2_norm1
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for block_2_norm1:
+  Tests: 116
+  Failures: 8
+  Failure rate: 6.90% ± 3.86%
+  CI: [3.04%, 10.75%]
+  Duration: 970.9 sec (16.2 min)
+
+======================================================================
+COMPONENT: block_2_norm2
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for block_2_norm2:
+  Tests: 116
+  Failures: 5
+  Failure rate: 4.31% ± 3.09%
+  CI: [1.22%, 7.40%]
+  Duration: 952.8 sec (15.9 min)
+
+======================================================================
+COMPONENT: block_3_attn_proj
+======================================================================
+Population (N): 37,056
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_3_attn_proj:
+  Tests: 164
+  Failures: 2
+  Failure rate: 1.22% ± 1.68%
+  CI: [0.00%, 2.90%]
+  Duration: 1347.3 sec (22.5 min)
+
+======================================================================
+COMPONENT: block_3_attn_qkv
+======================================================================
+Population (N): 111,168
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_3_attn_qkv:
+  Tests: 164
+  Failures: 5
+  Failure rate: 3.05% ± 2.63%
+  CI: [0.42%, 5.68%]
+  Duration: 1354.0 sec (22.6 min)
+
+======================================================================
+COMPONENT: block_3_mlp_fc1
+======================================================================
+Population (N): 148,224
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_3_mlp_fc1:
+  Tests: 164
+  Failures: 5
+  Failure rate: 3.05% ± 2.63%
+  CI: [0.42%, 5.68%]
+  Duration: 1326.1 sec (22.1 min)
+
+======================================================================
+COMPONENT: block_3_mlp_fc2
+======================================================================
+Population (N): 147,648
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_3_mlp_fc2:
+  Tests: 164
+  Failures: 8
+  Failure rate: 4.88% ± 3.29%
+  CI: [1.58%, 8.17%]
+  Duration: 1362.0 sec (22.7 min)
+
+======================================================================
+COMPONENT: block_3_norm1
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for block_3_norm1:
+  Tests: 116
+  Failures: 4
+  Failure rate: 3.45% ± 2.78%
+  CI: [0.67%, 6.23%]
+  Duration: 949.1 sec (15.8 min)
+
+======================================================================
+COMPONENT: block_3_norm2
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for block_3_norm2:
+  Tests: 116
+  Failures: 3
+  Failure rate: 2.59% ± 2.42%
+  CI: [0.17%, 5.00%]
+  Duration: 935.8 sec (15.6 min)
+
+======================================================================
+COMPONENT: block_4_attn_proj
+======================================================================
+Population (N): 37,056
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_4_attn_proj:
+  Tests: 164
+  Failures: 9
+  Failure rate: 5.49% ± 3.48%
+  CI: [2.01%, 8.97%]
+  Duration: 1574.8 sec (26.2 min)
+
+======================================================================
+COMPONENT: block_4_attn_qkv
+======================================================================
+Population (N): 111,168
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_4_attn_qkv:
+  Tests: 164
+  Failures: 5
+  Failure rate: 3.05% ± 2.63%
+  CI: [0.42%, 5.68%]
+  Duration: 1573.7 sec (26.2 min)
+
+======================================================================
+COMPONENT: block_4_mlp_fc1
+======================================================================
+Population (N): 148,224
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_4_mlp_fc1:
+  Tests: 164
+  Failures: 3
+  Failure rate: 1.83% ± 2.05%
+  CI: [0.00%, 3.88%]
+  Duration: 1497.0 sec (24.9 min)
+
+======================================================================
+COMPONENT: block_4_mlp_fc2
+======================================================================
+Population (N): 147,648
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_4_mlp_fc2:
+  Tests: 164
+  Failures: 2
+  Failure rate: 1.22% ± 1.68%
+  CI: [0.00%, 2.90%]
+  Duration: 1336.3 sec (22.3 min)
+
+======================================================================
+COMPONENT: block_4_norm1
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for block_4_norm1:
+  Tests: 116
+  Failures: 3
+  Failure rate: 2.59% ± 2.42%
+  CI: [0.17%, 5.00%]
+  Duration: 934.7 sec (15.6 min)
+
+======================================================================
+COMPONENT: block_4_norm2
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for block_4_norm2:
+  Tests: 116
+  Failures: 1
+  Failure rate: 0.86% ± 1.41%
+  CI: [0.00%, 2.27%]
+  Duration: 930.4 sec (15.5 min)
+
+======================================================================
+COMPONENT: block_5_attn_proj
+======================================================================
+Population (N): 37,056
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_5_attn_proj:
+  Tests: 164
+  Failures: 5
+  Failure rate: 3.05% ± 2.63%
+  CI: [0.42%, 5.67%]
+  Duration: 1315.1 sec (21.9 min)
+
+======================================================================
+COMPONENT: block_5_attn_qkv
+======================================================================
+Population (N): 111,168
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_5_attn_qkv:
+  Tests: 164
+  Failures: 2
+  Failure rate: 1.22% ± 1.68%
+  CI: [0.00%, 2.90%]
+  Duration: 1530.5 sec (25.5 min)
+
+======================================================================
+COMPONENT: block_5_mlp_fc1
+======================================================================
+Population (N): 148,224
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_5_mlp_fc1:
+  Tests: 164
+  Failures: 1
+  Failure rate: 0.61% ± 1.19%
+  CI: [0.00%, 1.80%]
+  Duration: 1535.4 sec (25.6 min)
+
+======================================================================
+COMPONENT: block_5_mlp_fc2
+======================================================================
+Population (N): 147,648
+Required sample size: 164
+Estimated time: 19.1 minutes
+
+Results for block_5_mlp_fc2:
+  Tests: 164
+  Failures: 6
+  Failure rate: 3.66% ± 2.87%
+  CI: [0.79%, 6.53%]
+  Duration: 1535.5 sec (25.6 min)
+
+======================================================================
+COMPONENT: block_5_norm1
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for block_5_norm1:
+  Tests: 116
+  Failures: 1
+  Failure rate: 0.86% ± 1.41%
+  CI: [0.00%, 2.27%]
+  Duration: 1065.2 sec (17.8 min)
+
+======================================================================
+COMPONENT: block_5_norm2
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for block_5_norm2:
+  Tests: 116
+  Failures: 4
+  Failure rate: 3.45% ± 2.78%
+  CI: [0.67%, 6.23%]
+  Duration: 970.5 sec (16.2 min)
+
+======================================================================
+COMPONENT: final_norm
+======================================================================
+Population (N): 384
+Required sample size: 116
+Estimated time: 13.5 minutes
+
+Results for final_norm:
+  Tests: 116
+  Failures: 10
+  Failure rate: 8.62% ± 4.27%
+  CI: [4.35%, 12.89%]
+  Duration: 951.4 sec (15.9 min)
+
+======================================================================
+COMPONENT VULNERABILITY RANKING
+======================================================================
+
+Rank   Component                                 Rate                    95% CI       Params
+--------------------------------------------------------------------------------------------
+1      final_norm                       8.62% ± 4.27% [ 4.35%, 12.89%]          384
+2      block_2_norm1                    6.90% ± 3.86% [ 3.04%, 10.75%]          384
+3      block_2_mlp_fc2                  6.71% ± 3.83% [ 2.88%, 10.53%]      147,648
+4      block_4_attn_proj                5.49% ± 3.48% [ 2.01%,  8.97%]       37,056
+5      block_3_mlp_fc2                  4.88% ± 3.29% [ 1.58%,  8.17%]      147,648
+6      block_2_norm2                    4.31% ± 3.09% [ 1.22%,  7.40%]          384
+7      block_2_attn_qkv                 3.66% ± 2.87% [ 0.79%,  6.53%]      111,168
+8      block_5_mlp_fc2                  3.66% ± 2.87% [ 0.79%,  6.53%]      147,648
+9      block_3_norm1                    3.45% ± 2.78% [ 0.67%,  6.23%]          384
+10     block_5_norm2                    3.45% ± 2.78% [ 0.67%,  6.23%]          384
+11     block_3_attn_qkv                 3.05% ± 2.63% [ 0.42%,  5.68%]      111,168
+12     block_3_mlp_fc1                  3.05% ± 2.63% [ 0.42%,  5.68%]      148,224
+13     block_4_attn_qkv                 3.05% ± 2.63% [ 0.42%,  5.68%]      111,168
+14     block_5_attn_proj                3.05% ± 2.63% [ 0.42%,  5.67%]       37,056
+15     block_3_norm2                    2.59% ± 2.42% [ 0.17%,  5.00%]          384
+16     block_4_norm1                    2.59% ± 2.42% [ 0.17%,  5.00%]          384
+17     block_2_attn_proj                2.44% ± 2.36% [ 0.08%,  4.79%]       37,056
+18     block_2_mlp_fc1                  1.83% ± 2.05% [ 0.00%,  3.88%]      148,224
+19     block_4_mlp_fc1                  1.83% ± 2.05% [ 0.00%,  3.88%]      148,224
+20     block_3_attn_proj                1.22% ± 1.68% [ 0.00%,  2.90%]       37,056
+21     block_4_mlp_fc2                  1.22% ± 1.68% [ 0.00%,  2.90%]      147,648
+22     block_5_attn_qkv                 1.22% ± 1.68% [ 0.00%,  2.90%]      111,168
+23     block_4_norm2                    0.86% ± 1.41% [ 0.00%,  2.27%]          384
+24     block_5_norm1                    0.86% ± 1.41% [ 0.00%,  2.27%]          384
+25     block_5_mlp_fc1                  0.61% ± 1.19% [ 0.00%,  1.80%]      148,224
+
+Summary saved: statistical_results\componentwise_summary_20260304_010524.json
+
+======================================================================
+COMPONENT-WISE ANALYSIS COMPLETE
+======================================================================
+
+Total duration: 31276.1 sec (8.69 hours)
+
+Top 3 Most Vulnerable Components:
+  1. final_norm: 8.62% ± 4.27%
+  2. block_2_norm1: 6.90% ± 3.86%
+  3. block_2_mlp_fc2: 6.71% ± 3.83%
